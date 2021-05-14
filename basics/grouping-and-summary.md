@@ -1,4 +1,4 @@
-# Grouping and Summary
+# Aggregation, Counting, Sum
 
 ## Aggregation
 
@@ -86,5 +86,5 @@ SELECT MAX(age) FROM employee;
 SELECT MIN(age) FROM employee;
 ```
 
-## Grouping
+
 

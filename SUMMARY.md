@@ -1,10 +1,10 @@
 # Table of contents
 
-* [Creating Tables](README.md)
-* [Untitled](untitled.md)
+* [Quick Reference](README.md)
 
 ## Basics
 
 * [Create Tables and Basic query](basics/create-tables.md)
-* [Grouping and Summary](basics/grouping-and-summary.md)
+* [Aggregation, Counting, Sum](basics/grouping-and-summary.md)
+* [Grouping](basics/grouping.md)
 
