@@ -5,5 +5,6 @@
 
 ## Basics
 
-* [Create Tables](basics/create-tables.md)
+* [Create Tables and Basic query](basics/create-tables.md)
+* [Grouping and Summary](basics/grouping-and-summary.md)
 

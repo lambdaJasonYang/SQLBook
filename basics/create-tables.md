@@ -1,8 +1,6 @@
-# Create Tables
+# Create Tables and Basic query
 
-## CREATE TABLE
-
-Becoming a super hero is a fairly straight forward process:
+### CREATE TABLE
 
 ```sql
 CREATE TABLE employees (id INTEGER PRIMARY KEY, name TEXT, age INTEGER);
@@ -48,9 +46,14 @@ SELECT * FROM employee ORDER BY name; --ORDER defaults ASC smallest to largest
 SELECT * FROM employee ORDER BY name DESC; --largest to smallest
 ```
 
+{% hint style="info" %}
+ORDER BY -- defaults ordering to ASC  
+ smallest on top -&gt; largest on bottom of table
+{% endhint %}
+
 ### SELECT DISTINCT
 
-DISTINCT -- like using set\(\) on lists; removes repeats
+DISTINCT -- like using python set\(\) on lists; removes repeats
 
 {% tabs %}
 {% tab title="SQL" %}
@@ -97,7 +100,28 @@ UPDATE Tuotteet SET age=age+1; --updates all rows
 UPDATE all rows by omitting the WHERE conditional as shown in last query.
 {% endhint %}
 
-### DELETE
+### DELETE data from table
+
+```sql
+DELETE FROM employee WHERE id=5;
+
+DELETE FROM employee; --deletes all rows, results in empty table
+```
+
+{% hint style="info" %}
+Transform into an empty table by omitting the WHERE conditional.
+{% endhint %}
+
+### DELETE table
+
+```sql
+DROP TABLE employee;
+```
+
+{% hint style="info" %}
+Unlike DELETE FROM employee,   
+DROP TABLE employee, means you cannot refer to the table anymore.
+{% endhint %}
 
 
 
