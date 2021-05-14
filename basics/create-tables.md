@@ -51,7 +51,7 @@ ORDER BY -- defaults ordering to ASC
  smallest on top -&gt; largest on bottom of table
 {% endhint %}
 
-### SELECT DISTINCT
+### SELECT DISTINCT, merge repeats
 
 DISTINCT -- like using python set\(\) on lists; removes repeats
 
@@ -87,7 +87,7 @@ age
 {% endtab %}
 {% endtabs %}
 
-### UPDATE
+### UPDATE data in table
 
 ```sql
 UPDATE employee SET name='anna', age=9 WHERE id=2;
@@ -112,7 +112,7 @@ DELETE FROM employee; --deletes all rows, results in empty table
 Transform into an empty table by omitting the WHERE conditional.
 {% endhint %}
 
-### DELETE table
+### DROP entire table
 
 ```sql
 DROP TABLE employee;
