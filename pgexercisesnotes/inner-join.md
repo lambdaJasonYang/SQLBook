@@ -1,13 +1,13 @@
 # Inner Join
 
-## INNER JOIN
+## INNER JOIN 
 
 ![](../.gitbook/assets/schema-horizontal.svg)
 
 The SELECT also uses the aliases. We create a SQL JOIN statement in-&gt;out, from the FROM ..WHERE to SELECT.
 
 ```bash
-#Step 1 Create the JOIN statement
+#Step 1 Create the JOIN statement, alias is some variable name you make up
 FROM                        
     firstTable aliasA
     INNER JOIN 
