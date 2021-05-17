@@ -53,5 +53,19 @@ order by surname, firstname;
 ```
 {% endcode %}
 
+```sql
+select distinct recs.firstname as rootrecommender, abc2.firstname as thirdhoprecommended
+	from 
+		
+		(cd.members mems
+		inner join cd.members recs
+			on recs.memid = mems.recommendedby)  --first hop
+			inner join cd.members abc
+				on mems.memid = abc.recommendedby --second hop
+					inner join cd.members abc2
+						on abc.memid = abc2.recommendedby --third hop
+;    
+```
+
 
 
