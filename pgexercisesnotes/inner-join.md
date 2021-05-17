@@ -53,12 +53,15 @@ order by surname, firstname;
 ```
 {% endcode %}
 
-```text
+#### Deeper Transitive relation
 
+{% code title="The number of level 3 recommendations" %}
+```text
 Herietta  --recBY-> Matthew  --recBY-> Gerald --recBY-> Darren
 Ramnaresh --recBY-> Florence --recBY-> Ponder --recBY-> Burton
 Douglas   --recBy-> David    --recBY-> Janice --recBY-> Darren
 ```
+{% endcode %}
 
 ```sql
 select distinct recs.firstname as rootrecommender, abc2.firstname as thirdhoprecommended
@@ -72,7 +75,7 @@ select distinct recs.firstname as rootrecommender, abc2.firstname as thirdhoprec
 					inner join cd.members abc2
 						on abc.memid = abc2.recommendedby --third hop
 ;    
---using select, we can only choose information about those with
+--using SELECT, we can only choose information about those with
 --level 3 nested recommendations.
 --BUT THAT also means out of level 3 we can choose 1,2,3 recommendations
 ```
