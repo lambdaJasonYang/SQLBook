@@ -76,5 +76,16 @@ Badminton Court	cheap
 {% endtab %}
 {% endtabs %}
 
+### Subquery and Scalar table
 
+Scalar table is a 1 row 1 column table   
+Scalar table can be substituted with value constants
+
+```sql
+select firstname, surname, joindate
+	from cd.members
+	where joindate = 
+		(select max(joindate) 
+			from cd.members);   
+```
 

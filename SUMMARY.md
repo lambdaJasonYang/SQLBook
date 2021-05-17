@@ -11,4 +11,6 @@
 ## PgExercisesNotes
 
 * [Untitled](pgexercisesnotes/untitled.md)
+* [Inner Join](pgexercisesnotes/inner-join.md)
+* [Scenarios](pgexercisesnotes/scenarios.md)
 
