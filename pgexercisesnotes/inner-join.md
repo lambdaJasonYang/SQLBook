@@ -1,6 +1,6 @@
 # Inner Join
 
-## INNER JOIN 
+### INNER JOIN 
 
 ![](../.gitbook/assets/schema-horizontal.svg)
 
@@ -21,6 +21,7 @@ FROM
     ...
 ```
 
+{% code title="Get booking time and facility name for a specific day and for tennis facility" %}
 ```sql
 select bks.starttime as start, facs.name as name
 	from 
@@ -33,17 +34,22 @@ select bks.starttime as start, facs.name as name
 		bks.starttime < '2012-09-22'
 order by bks.starttime; 
 ```
+{% endcode %}
 
 {% hint style="info" %}
  we need to link cd.bookings and cd.facilities, and constrain to specific day\(cd.bookings\) and facility\(cd.facilities\). 
 {% endhint %}
 
-Once you're strong enough, save the world:
+### INNER JOIN - SELF-REFERENCE FOREIGN ID
 
-{% code title="hello.sh" %}
-```bash
-# Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
+{% code title="select those that recommended themsevles" %}
+```sql
+select distinct recs.firstname as firstname, recs.surname as surname
+	from 
+		cd.members mems
+		inner join cd.members recs
+			on recs.memid = mems.recommendedby
+order by surname, firstname; 
 ```
 {% endcode %}
 
