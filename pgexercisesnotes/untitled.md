@@ -47,8 +47,34 @@ select *
 {% endtabs %}
 
 {% hint style="info" %}
-IN takes any table with a single column
+\(1,5\) behaves like a single col table.  
+IN can be applied to any table with a single column shown in Ex2
 {% endhint %}
+
+### CASE WHEN .. THEN .. ELSE .. END
+
+{% tabs %}
+{% tab title="SQL" %}
+```sql
+select name, 
+	case when (monthlymaintenance > 100) then
+		'expensive'
+	else
+		'cheap'
+	end as cost
+	from cd.facilities;     
+```
+{% endtab %}
+
+{% tab title="output" %}
+```
+name	          cost
+Tennis Court 1	expensive
+Tennis Court 2	expensive
+Badminton Court	cheap
+```
+{% endtab %}
+{% endtabs %}
 
 
 
