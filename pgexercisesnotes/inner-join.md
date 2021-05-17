@@ -40,7 +40,7 @@ order by bks.starttime;
  we need to link cd.bookings and cd.facilities, and constrain to specific day\(cd.bookings\) and facility\(cd.facilities\). 
 {% endhint %}
 
-### INNER JOIN - SELF-REFERENCE FOREIGN ID
+### INNER JOIN SELF - TRANSITIVE RELATION
 
 {% code title="select those that recommended themsevles" %}
 ```sql
@@ -52,6 +52,13 @@ select distinct recs.firstname as firstname, recs.surname as surname
 order by surname, firstname; 
 ```
 {% endcode %}
+
+```text
+
+Herietta  --recBY-> Matthew  --recBY-> Gerald --recBY-> Darren
+Ramnaresh --recBY-> Florence --recBY-> Ponder --recBY-> Burton
+Douglas   --recBy-> David    --recBY-> Janice --recBY-> Darren
+```
 
 ```sql
 select distinct recs.firstname as rootrecommender, abc2.firstname as thirdhoprecommended
@@ -65,7 +72,8 @@ select distinct recs.firstname as rootrecommender, abc2.firstname as thirdhoprec
 					inner join cd.members abc2
 						on abc.memid = abc2.recommendedby --third hop
 ;    
+--using select, we can only choose information about those with
+--level 3 nested recommendations.
+--BUT THAT also means out of level 3 we can choose 1,2,3 recommendations
 ```
-
-
 
