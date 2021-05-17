@@ -8,3 +8,7 @@
 * [Aggregation, Counting, Sum](basics/grouping-and-summary.md)
 * [Grouping](basics/grouping.md)
 
+## PgExercisesNotes
+
+* [Untitled](pgexercisesnotes/untitled.md)
+
