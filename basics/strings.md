@@ -38,5 +38,27 @@ select lpad(cast(zipcode as char(5)),5,'0') zip from cd.members order by zip
 --if original string is less than len 5, it will be padded
 ```
 
+### Map letter of alphabet  to Count\(first letter of name  is the  letter\)
 
+{% tabs %}
+{% tab title="SQL" %}
+```sql
+select substr (mems.surname,1,1) as letter, count(*) as count 
+    from cd.members mems
+    group by letter
+    order by letter          
+```
+{% endtab %}
+
+{% tab title="output" %}
+```
+letter	count
+B	5
+C	2
+D	1
+F	2
+G	2
+```
+{% endtab %}
+{% endtabs %}
 
