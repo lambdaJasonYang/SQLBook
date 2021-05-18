@@ -7,6 +7,7 @@
 * [Create Tables and Basic query](basics/create-tables.md)
 * [Aggregation, Counting, Sum](basics/grouping-and-summary.md)
 * [Grouping](basics/grouping.md)
+* [Recursion](basics/recursion.md)
 
 ## PgExercisesNotes
 
