@@ -9,6 +9,7 @@
 * [Strings](basics/strings.md)
 * [Grouping](basics/grouping.md)
 * [Recursion](basics/recursion.md)
+* [Normal Forms](basics/normal-forms.md)
 
 ## PgExercisesNotes
 
