@@ -2,6 +2,8 @@
 
 ## Order of Operations
 
+![](.gitbook/assets/screenshot-2021-06-05-124213.png)
+
 ```
 SELECT- FROM- WHERE- GROUP BY- HAVING-ORDER BY
 ```

@@ -13,13 +13,18 @@ CREATE TABLE employees (id INTEGER PRIMARY KEY, name TEXT, age INTEGER);
 ### INSERT INTO , filling data:
 
 ```sql
-INSERT INTO employee (name,age) VALUES ('bob',47);
+INSERT INTO employee 
+    (name,age) 
+    VALUES 
+        ('bob',47);
+        ('ann',32);
 ```
 
 ```text
 id          name        age     
 ----------  ----------  ----------
 1           bob         47    
+2           ann         32
 ```
 
 ### Null Data
