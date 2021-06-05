@@ -28,6 +28,7 @@
     <tr>
       <td style="text-align:left">Isolation</td>
       <td style="text-align:left">
+        <p>Client never see an dirty state with partial transaction.</p>
         <p>Concurrent access to same resource doesn&apos;t create race condition.</p>
         <p>Serialization is ideal isolation but rarely used due to performance.</p>
       </td>
