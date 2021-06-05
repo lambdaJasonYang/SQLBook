@@ -22,6 +22,7 @@
           />AID are properties of the database.</p>
         <p>Basically same as program(transaction) invariant is maintained before
           and after if the program(transaction) is written correctly.</p>
+        <p>Best example: Validation of datatypes</p>
       </td>
     </tr>
     <tr>
