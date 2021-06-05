@@ -25,8 +25,20 @@
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">Isolation</td>
+      <td style="text-align:left">
+        <p>Concurrent access to same resource doesn&apos;t create race condition.</p>
+        <p>Serialization is ideal isolation but rarely used due to performance.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Durability</td>
+      <td style="text-align:left">
+        <p>Literally means data that is committed doesn&apos;t get wiped out by physical
+          electronic failure.</p>
+        <p>Replication provides best durability , database must wait until replication
+          completes before transaction is successful.</p>
+      </td>
     </tr>
   </tbody>
 </table>
