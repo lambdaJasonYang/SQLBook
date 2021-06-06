@@ -45,3 +45,8 @@
   </tbody>
 </table>
 
+### Isolation
+
+* Snapshot Isolation
+  * Called "Repeatable read" in Postgres and MySQL
+
