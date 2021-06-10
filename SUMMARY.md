@@ -17,6 +17,10 @@
 * [Inner Join](pgexercisesnotes/inner-join.md)
 * [Scenarios](pgexercisesnotes/scenarios.md)
 
+## Script pgSQL SQLite
+
+* [Untitled](script-pgsql-sqlite/untitled.md)
+
 ## Data Driven Design
 
 * [Untitled](data-driven-design/untitled.md)
